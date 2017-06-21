@@ -1,0 +1,62 @@
+.newsletter {
+  .newsletterText {
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    p{
+      text-align: center;
+    }
+  }
+  .newsletterForm {
+      text-align: center;
+      box-sizing: border-box;
+      margin-bottom: 50px;
+      margin-top: 56px;
+
+      form {
+        display: flex;
+        justify-content: space-between; 
+        border-bottom: solid black 1px;
+        max-width: 840px;
+        margin: 0 auto;
+        input {
+          border: none;
+        }
+      }
+  }
+}
+
+.sponsors {
+  .sponsorImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+}
+
+.pageDivide {
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid rgb(231, 230, 226);
+  margin-bottom: 100px; 
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .sponsorImages {
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

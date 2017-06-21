@@ -1,0 +1,118 @@
+    
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+*:focus {
+  outline:none;
+}
+
+h2 {
+  font-size: 36px;
+  margin:0;
+}
+
+h2.fancyLine:after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: block;
+  background: linear-gradient(to right, $teal 0%, $teal 30%, lightgray 30%, lightgray 70%, $teal 70%, $teal 100%);
+  margin: 0 auto;
+}
+
+h4.notAsFancy:after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  display: block;
+  background: $teal;
+}
+
+h3 {
+  font-size: 32px;
+  margin:0;
+}
+
+h4 {
+  font-size: 24px;
+  margin:0;
+}
+
+h5 {
+  font-size: 18px;
+  margin:0;
+}
+
+p {
+  font-size: 14px;
+  margin:0;
+}
+
+p.specialSixteen {
+  font-size: 16px;
+
+}
+
+p.specialTwelve {
+  font-size: 12px;
+
+}
+
+p.hoverMe {
+  border-bottom: 1 px solid black;
+}
+
+p.hoverMe:hover {
+  color: $grey;
+}
+
+.makeItGrey {
+  color: $grey;
+    }
+
+.makeItItalic {
+  font-style: italic;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbarLeft p:hover {
+  color: $grey;
+  font-weight: 400;
+ }
+
+ .navbarRight i:hover {
+  color: $grey;
+ }
+
+.heroIcons {
+  display: none;
+}
+
+
+li {
+  list-style: none;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

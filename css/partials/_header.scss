@@ -1,0 +1,69 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;  
+  position: relative;
+
+  .logo{
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    
+  } 
+  .navbarLeft {
+    display: flex;
+    width: 33.33%;
+    min-width: 349px;
+    justify-content: space-between;
+    li {
+      a {
+        color: black;
+        font-weight: 400;
+        p {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .navbarRight {
+    display:flex;
+    width: 33.33%;
+    justify-content: flex-end;  
+    li {
+    margin-left: 10px;
+    float: right;
+    font-size: 25px;
+    a {
+      color: black;
+    }
+    }
+  }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .navbar {
+    .navbarRight{
+      justify-content: center;
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .navbar {
+    .navbarLeft {
+      display: none;
+    }
+  }
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .navbar {
+  }
+}
+
+

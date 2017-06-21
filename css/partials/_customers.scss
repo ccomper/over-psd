@@ -1,0 +1,88 @@
+.customers {
+  display: flex;
+  .customersLeft {
+    background-image: url(../assets/customersimageleft.jpg);
+    width: 50%;
+    .customersLeftText {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%; 
+      padding: 110px;
+      p.makeItItalic {
+        margin-bottom: 30px;
+      }
+      .customersLeftIcons ul {
+        display: flex;
+        justify-content: center;
+        margin-top:50px;
+      }
+      .customersLeftIcons i {
+        padding: 10px;
+        font-size: 30px;
+        color: $grey;
+      }
+      .customersLeftIcons i:hover {
+        transform: scale(1.7);
+        color: $grey;
+      }
+    } 
+  }
+  .customersRight {
+    background: linear-gradient(rgba(26,26,38,0.5), rgba(26,26,38,0.5)), url(../assets/customersimageright.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .customersRightText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        color: white;
+        text-align: center;
+      }
+      .plantsStoreLogo {
+        justify-content: center;
+
+      }
+    }
+  }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .customers {
+    .customersRight {
+      .plantsStoreLogo {
+        display: flex;
+        flex-direction:column;
+      }
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .customers {
+    flex-direction: column;
+    .customersLeft {
+      width: 100%;
+    }
+    .customersRight {
+      width: 100%;
+      .customersRightText {
+        padding: 110px;
+      }
+
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

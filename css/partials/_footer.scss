@@ -1,0 +1,148 @@
+footer {
+  display: flex;
+  .col-left {
+    width: 35%;
+    .col-left-text-info {
+      padding-right: 10px;
+     }
+    img {
+      margin-bottom: 50px;
+    }
+    p.moveMe {
+      margin-bottom: 50px;
+      padding-right: 50px;
+    }
+    .col-left-icons {
+      li {
+        display: inline;
+        margin-right: 20px;
+      i {
+        color: black;
+        margin-top: 46px;
+       }
+       i:hover {
+        color: $grey;
+       }
+      } 
+    }
+  }
+.col-mid {
+  width: 35%;
+  display: flex;
+  h4 {
+    margin-bottom: 45px;
+  }
+  .col-mid-left {
+  width: 50%;
+  }
+  .col-mid-right {
+  width: 50%;
+  }
+}
+  .col-right {
+  width: 30%;
+  }
+}
+
+.instagramImagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+    margin: 0 4.5px;
+    }
+  }
+  .creditCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    li {
+    margin-right: 10px;
+  }
+  }
+}
+
+.bottomCopyright {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    .col-right {
+    flex-wrap:wrap;
+    width: 50%;
+    }
+    .col-mid {
+    flex-wrap:wrap;
+    width: 50%;
+    }
+    .col-left {
+    flex-wrap:wrap;
+    width: 100%;
+    text-align: center;
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    footer {
+    display: flex;
+    flex-wrap: wrap;
+    h4.notAsFancy:after {
+      text-align: center;
+      margin: 0 auto;
+    }
+    .col-right {
+    flex-wrap:wrap;
+    width: 100%;
+      h4 {
+        text-align: center;
+      }
+    }
+    .col-mid {
+    flex-wrap:wrap;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    }
+    .col-left {
+    flex-wrap:wrap;
+    width: 100%;
+    text-align: center;
+     p.moveMe {
+      padding-bottom: 5px;
+      padding-right: 0;
+     }
+    }
+  }
+}
+
+.instagramImagesContainer {
+  display: flex;
+  justify-content: center;
+  .images {
+    justify-content: center;
+  }
+  img {
+  text-align: center;
+  align-content: center;
+  width: 100%;  
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
